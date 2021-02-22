@@ -5,31 +5,82 @@
         <meta name = "description" content="Olena's site">
         <title>Olena's Website</title>
     </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
     <style>
+        .email {
+            margin: 0px;
+            background-color: rgb(121,207,181);
+        }
+        hr {
+            border: 0px;
+            border-top: 3px solid rgb(121,207,181);
+        }
+        h2 {
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
         .body{
-            background-color:rebeccapurple;
+            background-color:rgba(13,151,109,1);
 
         }
         .name {
             border-style: :solid;
             border: width 5px;
-            border-color: black;
+            border-color: grey;
             text-align: center;
+            <!--font-family: 'Dancing Script', cursive;-->
             
+            font-size: 35px;
+            margin: 15px;
 
         }
-        .links{
-
+        .Card {
+            width: 300px;
+            border: 3px solid rgb(121,207,181);
+            border-radius: 5px;
+            margin: 10px 5px;
+            padding: 0px;
+            position: absolute;
+            top: 25%;
+            right: 40%;
+            
+        }
+        .cardContent {
+            padding: 0px;
+        }
+        .cardText {
+            margin-bottom: 10px;
+        }
+        .link {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 7px;
+            
+        }
+        .git {
+            border-radius: 50%;
+            border-color: rgb(121,207,181);
+            border-width: 8px;
+            border-style: solid;
         }
     </style>
     <body class = "body">
         <!--<h1 style="color:azure">Olena Hlotova</h1>-->
-        <h1 class = "name">Olena Hlotova</h1>
-        <h2>+1 (647) 863-4863</h2>
-        <h2 style="background-color: ">email: lenaglotova21@gmail.com</h2>
-
-        <a href="https://github.com/olensa">
-            <img width="50" height="50" src = "github_logo.jpg" alt="github"/>
-        </a>
+        <div class = "Card" id="thumbnail">
+        <div class="cardContent">
+            <div class="cardText">
+                <h1 class = "name">Olena Hlotova</h1>
+                <hr>
+                <h2>+1 (647) 863-4863</h2>
+                <h2  class = "email">email: lenaglotova21@gmail.com</h2>
+                </div>
+                <a href="https://github.com/olensa">
+                    <img class = "link git" width="50" height="50" src = "github_logo.jpg" alt="github"/>
+                </a>
+                </div>
+        </div>
     </body>
 </html>
